@@ -17,27 +17,39 @@ html,body{
     flex:1;
     transition: flex 1s cubic-bezier(1,.23,0,.72);
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
+    flex-direction: column;
 }
-.coucou{
+.coucou, .salut{
     background-color:#0000ff63;
     color:white;
     font-size:3em;
     font-weight:bolder;
-    transition: opacity 2s;
+    transition: all 1s;
 }
 .panneau>.coucou{
     opacity:0%;
+    transform: translateY(-150vh);
 
 }
+.panneau>.salut{
+    opacity: 0%;
+    transform: translateY(150vh);
 
+}
+.panneau>.leo{
+    opacity: 0%;
+    transform: translateX(-150vw);
+}
 
 .panneau:hover{
     flex:5;
 }
-.panneau:hover>.coucou{
+.panneau:hover>.coucou ,.panneau:hover>.salut, .panneau:hover>.leo{
     opacity:100%;
+    transform: translateY(0);
+    transform: translateX(0);
 }
 
 
@@ -61,6 +73,16 @@ html,body{
 .background5{
     background-image:url('images/5.png');
 
+}
+.leo{
+    background-image: url("images/leo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    transition: all 1s;
 }
 
 

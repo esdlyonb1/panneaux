@@ -1,0 +1,66 @@
+html,body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.panneaux{
+    height:100vh;
+    width:100vw;
+    display:flex;
+}
+.panneau{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100%;
+    flex:1;
+    transition: flex 1s cubic-bezier(1,.23,0,.72);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.coucou{
+    background-color:#0000ff63;
+    color:white;
+    font-size:3em;
+    font-weight:bolder;
+    transition: opacity 2s;
+}
+.panneau>.coucou{
+    opacity:0%;
+
+}
+
+
+.panneau:hover{
+    flex:5;
+}
+.panneau:hover>.coucou{
+    opacity:100%;
+}
+
+
+.background1{
+    background-image:url('images/1.png');
+
+}
+.background2{
+    background-image:url('images/2.png');
+
+
+}
+.background3{
+    background-image:url('images/3.png');
+
+}
+.background4{
+    background-image:url('images/4.png');
+
+}
+.background5{
+    background-image:url('images/5.png');
+
+}
+
+
